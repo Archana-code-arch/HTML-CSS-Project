@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title> GLSPORTS</title>
+   <!------- <link rel="stylesheet" href="register.css">--->
+</head>
+
+<body>
+    <h2>Start Your free trial now !!</h2>
+    <div class="container " id="container">
+        <div class="social-container">
+            <form action="#">
+                <h1> Create Account</h1>
+                <div class="social-container">
+                    <a href="#" class="social"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" class="social"><i class="fab fa-fgoogle-plus-g"></i></a>
+                    <a href="#" class="social"><i class="fab fa-linkend-in"></i></a>
+                </div>
+                <span>or use your email for registration</span>
+                <input type="text" placeholder="Name"/>
+                <input type="email" placeholder="Email"/>
+                <input type="password" placeholder="Password"/>
+                <button>Sign Up</button>
+                </form>
+                </div>
+    <div class="form-container sign-in-container">
+        <form action="#">
+        <h1>Sign in</h1>
+        <div class="social-container">
+            <a href="#" class="social"><i class="fab fa-facebook-f"></i></a>
+            <a href="#" class="social"><i class="fab fa-fgoogle-plus-g"></i></a>
+            <a href="#" class="social"><i class="fab fa-linkend-in"></i></a>
+        </div>
+        <span>or use your account</span>
+                <input type="email" placeholder="Email"/>
+                <input type="password" placeholder="Password"/>
+               <a href="#">Forgot Your password?</a>
+               <button>Sign In</button>
+                </form>
+    </div>
+    <div class="overlay-container">
+        <div class="overlay">
+            <div class="overlay-panel onerlay-left">
+                <h1> Welcome Back!!</h1>
+                <p> To keep connected with us place login with your personal info.</p>
+                <button class="ghost" id="signUp">Sign Up</button>
+            </div>
+            <div class="overlay-panel onerlay-right">
+                <h1> Hello , Friend!!</h1>
+                <p> Enter Your personal Details and start journey with Us.</p>
+                <button class="ghost" id="signIn">Sign In</button>
+            </div>
+        </div>
+    </div>
+    </div>
+
+
+    <footer>
+        <div class="footer-bottom text-center">Copyright &copy; 2022 Grate Archana  
+            </div>
+            </footer>
+
+    <script>
+        const signUpButton = document.getElementById('signUp');
+        const signInButton = document.getElementById('signIn');
+        const container = document.getElementById('container');
+
+        signInButton.addEventListener('click',() => {
+            container.classList.add("right-panel-active");
+        });
+
+        signUpButton.addEventListener('click',() => {
+            container.classList.add("right-panel-active");
+        });
+                
+</script>
+
+</body>
+
+</html>
